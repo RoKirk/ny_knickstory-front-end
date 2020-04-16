@@ -17,7 +17,7 @@ export class PlayerList extends Component {
 
     getAllPlayers = async () => {
         try {
-            let response = await axios.get("http://localhost:3000/players")
+            let response = await axios.get("https://ny-knickstory-back-end.herokuapp.com/players")
             console.log(response)
             
             this.setState({

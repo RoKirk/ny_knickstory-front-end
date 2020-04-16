@@ -32,7 +32,7 @@ class BlogInterface extends Component {
 
     readAllPost = async () => {
         try {
-            let response = await axios.get("http://localhost:3000/blog_posts")
+            let response = await axios.get("https://ny-knickstory-back-end.herokuapp.com/blog_posts")
             console.log(response)
             this.setState({
                 posts: response.data,

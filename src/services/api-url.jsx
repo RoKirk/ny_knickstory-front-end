@@ -1,8 +1,8 @@
 let apiUrl
 const apiUrls = {
-    production: 'https://ny-knickstory.herokuapp.com//',
+    production: 'https://ny-knickstory-back-end.herokuapp.com/',
     // development: 'http://localhost:3000/api/v1'
-    development: '/'
+    development: 'https://ny-knickstory-back-end.herokuapp.com/'
 }
 if (window.location.hostname === 'localhost') {
     apiUrl = apiUrls.development

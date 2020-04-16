@@ -16,7 +16,7 @@ class Team extends Component {
 
     getAllTeams = async () => {
         try {
-            let response = await axios.get("http://localhost:3000/new_york_teams")
+            let response = await axios.get("https://ny-knickstory-back-end.herokuapp.com/new_york_teams")
             console.log(response)
             this.setState({
                 team: response.data,

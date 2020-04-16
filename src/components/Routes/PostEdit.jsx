@@ -30,7 +30,7 @@ class PostEdit extends Component {
         try {
             let postId = this.props.match.params.id
             console.log(postId)
-            let response = await axios.get(`http://localhost:3000/blog_posts/${postId}`)
+            let response = await axios.get(`https://ny-knickstory-back-end.herokuapp.com/blog_posts/${postId}`)
             console.log(response.data)
             this.setState({
                 post_text: response.data

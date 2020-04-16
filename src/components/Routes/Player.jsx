@@ -18,7 +18,7 @@ class Player extends Component {
         console.log(this.props.match.params.id)
         let id = this.props.match.params.id
         try {
-            let response = await axios.get(`http://localhost:3000/players/${id}`)
+            let response = await axios.get(`https://ny-knickstory-back-end.herokuapp.com/players/${id}`)
             console.log(response)
             this.setState({
                 player: response.data,
