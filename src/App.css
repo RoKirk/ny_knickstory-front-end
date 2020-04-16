@@ -1,0 +1,125 @@
+.App {
+text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* **** Welcome Page **** */
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  text-align: center;
+  animation: pulse 10s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: orangered;
+  }
+  100% {
+    background-color: darkblue;
+  }
+}
+
+.landing-page-title {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 45px 315px;
+  height: 100%;
+}
+
+#app-title {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 3em;
+  margin: 0;
+  animation: superman 5s infinite;
+}
+
+@keyframes superman {
+  0% {
+    color: darkblue;
+  }
+  100% {
+    color: orangered;
+  }
+}
+
+.welcome-page-links {
+    text-decoration-line: underline;
+    text-decoration-color: orangered;
+    font-size: 25px;
+}
+
+/* **** User Login/Signup Page **** */
+
+.back-links {
+  color: darkblue;
+  text-decoration-line: underline;
+  text-decoration-color: darkblue;
+  font-size: 25px;
+}
+
+.login-signup-header {
+  color: blue;
+}
+
+.login-signup-page {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 100px 200px;
+  height: 100%;
+  
+  text-align: center;
+  background-color: orangered;
+  color: blue;
+  font-weight: bold;
+}
+
+.welcome-page-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px 20px 10px 0px;
+}
+
+.blog-int {
+  margin: 0 auto;
+  width: 750px;
+}
